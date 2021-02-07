@@ -30,7 +30,7 @@ where
 fn main() {
     let mut config = Config::default();
     config
-        .merge(config::File::with_name("Secrets"))
+        .merge(config::File::with_name("Config"))
         .unwrap()
         .merge(config::Environment::with_prefix("ELON_DOGE"))
         .unwrap();
