@@ -5,16 +5,16 @@ where Elon's face has been photoshopped over the face of Mufasa presenting
 a shiba una doge which has been photoshopped over Simba](tweet.png)
 
 **Tired of losing out on the Doge pump? Run the elon doge bot!**
-Every time Elon tweets about Dogecoin, buy some! This bot monitors @elonmusk
-and places a market buy order on Binance.us if his tweet mentions $DOGE.
+Every time Elon tweets about Dogecoin, buy some! This bot monitors
+[@elonmusk](https://twitter.com/elonmusk) and places a market buy order on
+Binance.us if one of his new tweet mentions $DOGE.
 
 ## Usage
 
 To run the bot, you'll need a Twitter bearer token and a Binance.us API key
 and secret.
 
-You'll also need [https://www.rust-lang.org/tools/install](Rust installed
-on your machine).
+You'll also need [Rust installed on your machine](https://www.rust-lang.org/tools/install).
 
 Copy `Config.toml.example` and rename it `Config.toml`. Put your credentials in
 the file and set `usdt_order_size`.
