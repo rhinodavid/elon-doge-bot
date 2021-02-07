@@ -53,9 +53,8 @@ fn main() {
         let binance_api_key = binance_api_key.clone();
         let binance_secret_key = binance_secret_key.clone();
         easy.write_function(move |data| {
-            let result = str::from_utf8(data).unwrap().to_string();
-            println!("{}", result);
-            if has_doge_string(&result) {
+            let response = str::from_utf8(data).unwrap().to_string();
+            if has_doge_string(&response) {
                 place_order(&binance_api_key, &binance_secret_key, usdt_order_size);
             }
             Ok(data.len())
