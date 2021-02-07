@@ -1,7 +1,7 @@
 use binance::account::*;
 use binance::api::*;
 use chrono::{DateTime, Duration, Utc};
-use config::*;
+use config::Config;
 use curl::easy::{Easy, List};
 use regex::Regex;
 use std::collections::HashMap;
@@ -28,7 +28,7 @@ where
 }
 
 fn main() {
-    let mut config = config::Config::default();
+    let mut config = Config::default();
     config
         .merge(config::File::with_name("Secrets"))
         .unwrap()
