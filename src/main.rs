@@ -38,8 +38,9 @@ fn main() {
     let binance_api_key: String = config.get("binance_api_key").unwrap().into();
     let binance_secret_key: String = config.get("binance_secret_key").unwrap().into();
     let twitter_bearer_token: String = config.get("twitter_bearer_token").unwrap().into();
-    let usdt_order_size: String = config.get("usdt_order_size").unwrap().into();
-    let usdt_order_size: f32 = usdt_order_size.parse::<f32>().unwrap();
+    let order_size_doge: String = config.get("order_size_doge").unwrap().into();
+    let order_size_doge: f32 = order_size_doge.parse::<f32>().unwrap();
+
     loop {
         let thirty_seconds_ago: DateTime<Utc> = Utc::now() - Duration::seconds(30);
 
@@ -55,7 +56,7 @@ fn main() {
         easy.write_function(move |data| {
             let response = str::from_utf8(data).unwrap().to_string();
             if has_doge_string(&response) {
-                place_order(&binance_api_key, &binance_secret_key, usdt_order_size);
+                place_order(&binance_api_key, &binance_secret_key, order_size_doge);
             }
             Ok(data.len())
         })

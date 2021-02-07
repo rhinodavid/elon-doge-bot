@@ -1,4 +1,4 @@
 binance_api_key = 
 binance_secret_key = 
+order_size_doge = <how many $DOGE to buy with each order>
 twitter_bearer_token = 
-usdt_order_size = <how much USDT to spend on each order>
