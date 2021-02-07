@@ -17,6 +17,7 @@ and secret.
 You'll also need [Rust installed on your machine](https://www.rust-lang.org/tools/install).
 
 Copy `Config.toml.example` and rename it `Config.toml`. Put your credentials in
-the file and set `usdt_order_size`.
+the file and set `order_size_doge` to the amount of $DOGE you want to buy on each
+trade.
 
 In the terminal, navigate to the repository and execute `cargo run`.
