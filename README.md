@@ -4,7 +4,7 @@
 where Elon's face has been photoshopped over the face of Mufasa presenting
 a shiba una doge which has been photoshopped over Simba](tweet.png)
 
-*Tired of losing out on the Doge pump? Run the elon doge bot!*
+**Tired of losing out on the Doge pump? Run the elon doge bot!**
 Every time Elon tweets about Dogecoin, buy some! This bot monitors @elonmusk
 and places a market buy order on Binance.us if his tweet mentions $DOGE.
 
