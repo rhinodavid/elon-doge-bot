@@ -21,3 +21,18 @@ the file and set `order_size_doge` to the amount of $DOGE you want to buy on eac
 trade.
 
 In the terminal, navigate to the repository and execute `cargo run`.
+
+### Using Internation Binance
+
+The bot is set up to trade on Binance.us. To use the international
+Binance, in `Cargo.toml` change the line
+
+```
+binance = { git = "https://github.com/rhinodavid/binance-rs.git" }
+```
+
+to
+
+```
+binance = { git = "https://github.com/wisespace-io/binance-rs.git" }
+```
